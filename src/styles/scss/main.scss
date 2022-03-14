@@ -1,0 +1,10 @@
+//reset styles
+@import './config/reset';
+
+//import components
+@import './components/aside';
+@import './components/main-page';
+@import './components/footer';
+
+//media requests
+@import './config/media';

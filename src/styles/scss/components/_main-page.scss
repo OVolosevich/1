@@ -1,0 +1,140 @@
+* {
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  // min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.page-container {
+  max-width: 1024px;
+  margin: 50px;
+
+  background: #174180;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+
+  box-shadow: 5px 5px 27px 6px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 5px 5px 27px 6px rgba(0, 0, 0, 0.3);
+}
+
+.main {
+  width: 70%;
+  background: #ffffff;
+  padding: 35px;
+  border-top-right-radius: 30px;
+
+  .header {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .header > h1 {
+    font-size: 42px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 6px;
+  }
+
+  .header h2 {
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+  }
+
+  .section {
+    margin-bottom: 30px;
+    width: 100%;
+
+    .section__text,
+    .section__item {
+      margin-left: 18px;
+      padding-right: 5px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 16px;
+      color: #4f4f4f;
+    }
+
+    .section__item {
+      list-style-type: disc;
+    }
+
+    .section__title {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 22px;
+      color: #174180;
+      border-bottom: 2px solid #174180;
+      padding-bottom: 15px;
+      margin-bottom: 15px;
+    }
+  }
+  .projects__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 8px;
+
+    .project__item {
+      background: yellowgreen;
+      width: 200px;
+      height: 100px;
+      cursor: pointer;
+      
+      &:hover {
+        box-shadow: inset 0 0 10px 5px rgba(0,0,0,0.3);
+      }
+
+      &--transactions-table {
+        background: url(../../img/projects-backgrounds/transactions-table.png) 0
+          0/100% 100% no-repeat;
+      }
+
+      &--museum {
+        background: url(../../img/projects-backgrounds/museum.png) 0 0/100% 100%
+          no-repeat;
+      }
+
+      &--leverx {
+        background: url(../../img/projects-backgrounds/leverx.png) 0 0/100% 100%
+          no-repeat;
+      }
+
+      &--konstruct {
+        background: url(../../img/projects-backgrounds/konstruct.png) 0 0/100%
+          100% no-repeat;
+      }
+
+      &--counries-table {
+        background: url(../../img/projects-backgrounds/counries-table.png) 0 0/100%
+          100% no-repeat;
+      }
+
+      &--calculator {
+        background: url(../../img/projects-backgrounds/calculator.png) 0 0/100%
+          100% no-repeat;
+      }
+
+      .project__link {
+          display: block;
+          width: 100%;
+          height: 100%;
+      }
+    }
+  }
+}
