@@ -45,7 +45,7 @@ body {
     font-size: 42px;
     font-weight: 600;
     color: black;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
   }
 
   .header h2 {
@@ -95,45 +95,39 @@ body {
       width: 200px;
       height: 100px;
       cursor: pointer;
-      
+
       &:hover {
-        box-shadow: inset 0 0 10px 5px rgba(0,0,0,0.3);
+        box-shadow: inset 0 0 10px 5px rgba(0, 0, 0, 0.3);
       }
 
       &--transactions-table {
-        background: url(../../img/projects-backgrounds/transactions-table.png) 0
-          0/100% 100% no-repeat;
+        background: url(../../img/projects-backgrounds/transactions-table.png) 0 0/100% 100% no-repeat;
       }
 
       &--museum {
-        background: url(../../img/projects-backgrounds/museum.png) 0 0/100% 100%
-          no-repeat;
+        background: url(../../img/projects-backgrounds/museum.png) 0 0/100% 100% no-repeat;
       }
 
       &--leverx {
-        background: url(../../img/projects-backgrounds/leverx.png) 0 0/100% 100%
-          no-repeat;
+        background: url(../../img/projects-backgrounds/leverx.png) 0 0/100% 100% no-repeat;
       }
 
       &--konstruct {
-        background: url(../../img/projects-backgrounds/konstruct.png) 0 0/100%
-          100% no-repeat;
+        background: url(../../img/projects-backgrounds/konstruct.png) 0 0/100% 100% no-repeat;
       }
 
       &--counries-table {
-        background: url(../../img/projects-backgrounds/counries-table.png) 0 0/100%
-          100% no-repeat;
+        background: url(../../img/projects-backgrounds/counries-table.png) 0 0/100% 100% no-repeat;
       }
 
       &--calculator {
-        background: url(../../img/projects-backgrounds/calculator.png) 0 0/100%
-          100% no-repeat;
+        background: url(../../img/projects-backgrounds/calculator.png) 0 0/100% 100% no-repeat;
       }
 
       .project__link {
-          display: block;
-          width: 100%;
-          height: 100%;
+        display: block;
+        width: 100%;
+        height: 100%;
       }
     }
   }
