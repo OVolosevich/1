@@ -48,7 +48,7 @@ blockquote, q {
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -113,12 +113,9 @@ audio:not([controls]) {
  *    user zoom.
  */
 html {
-  font-size: 100%;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
-  -ms-text-size-adjust: 100%;
-  /* 2 */
+  font-size: 100%; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -ms-text-size-adjust: 100%; /* 2 */
 }
 
 /**
@@ -141,10 +138,8 @@ a:hover {
  * 2. Improve image quality when scaled in IE 7.
  */
 img {
-  border: 0;
-  /* 1 */
-  -ms-interpolation-mode: bicubic;
-  /* 2 */
+  border: 0; /* 1 */
+  -ms-interpolation-mode: bicubic; /* 2 */
 }
 
 /**
@@ -176,13 +171,10 @@ fieldset {
  * 3. Correct alignment displayed oddly in IE 6/7.
  */
 legend {
-  border: 0;
-  /* 1 */
+  border: 0; /* 1 */
   padding: 0;
-  white-space: normal;
-  /* 2 */
-  *margin-left: -7px;
-  /* 3 */
+  white-space: normal; /* 2 */
+  *margin-left: -7px; /* 3 */
 }
 
 /**
@@ -195,14 +187,10 @@ button,
 input,
 select,
 textarea {
-  font-size: 100%;
-  /* 1 */
-  margin: 0;
-  /* 2 */
-  vertical-align: baseline;
-  /* 3 */
-  *vertical-align: middle;
-  /* 3 */
+  font-size: 100%; /* 1 */
+  margin: 0; /* 2 */
+  vertical-align: baseline; /* 3 */
+  *vertical-align: middle; /* 3 */
 }
 
 /**
@@ -235,15 +223,12 @@ select {
  *    Known issue: inner spacing remains in IE 6.
  */
 button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  -webkit-appearance: button;
-  /* 2 */
-  cursor: pointer;
-  /* 3 */
-  *overflow: visible;
-  /* 4 */
+html input[type=button],
+input[type=reset],
+input[type=submit] {
+  -webkit-appearance: button; /* 2 */
+  cursor: pointer; /* 3 */
+  *overflow: visible; /* 4 */
 }
 
 /**
@@ -260,16 +245,12 @@ html input[disabled] {
  * 3. Remove excess padding in IE 7.
  *    Known issue: excess padding remains in IE 6.
  */
-input[type="checkbox"],
-input[type="radio"] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
-  *height: 13px;
-  /* 3 */
-  *width: 13px;
-  /* 3 */
+input[type=checkbox],
+input[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+  *height: 13px; /* 3 */
+  *width: 13px; /* 3 */
 }
 
 /**
@@ -277,10 +258,8 @@ input[type="radio"] {
  * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
-input[type="search"] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  /* 2 */
+input[type=search] {
+  -webkit-appearance: textfield; /* 1 */ /* 2 */
   box-sizing: content-box;
 }
 
@@ -288,8 +267,8 @@ input[type="search"] {
  * Remove inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -307,10 +286,8 @@ input::-moz-focus-inner {
  * 2. Improve readability and alignment in all browsers.
  */
 textarea {
-  overflow: auto;
-  /* 1 */
-  vertical-align: top;
-  /* 2 */
+  overflow: auto; /* 1 */
+  vertical-align: top; /* 2 */
 }
 
 /**
@@ -327,6 +304,11 @@ input,
 select,
 textarea {
   color: #222;
+}
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
 }
 
 ::selection {
@@ -358,20 +340,20 @@ textarea {
 .aside-list {
   width: 30%;
   height: 100%;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .picture {
   display: block;
   margin: 0 auto;
-  background-position: top;
   margin-top: 60px;
   margin-bottom: 30px;
   width: 190px;
   height: 190px;
-  object-fit: cover;
-  object-position: left top;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 50%;
+  background-position: top;
   border: solid 3px white;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -389,9 +371,8 @@ textarea {
   margin-top: 30px;
   margin-bottom: 40px;
   margin-left: 30px;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid rgb(255, 255, 255);
 }
-
 .aside-item .list--skills {
   display: grid;
   grid-template-rows: 1fr 1fr;
@@ -399,36 +380,30 @@ textarea {
   grid-gap: 10px;
   padding-right: 7px;
 }
-
 .aside-item .links-list {
   width: 100%;
   display: flex;
   flex-direction: column;
   margin-bottom: 15px;
 }
-
 .aside-item .links-list .links__item {
   margin-bottom: 5px;
 }
-
 .aside-item .links-list .links__item .links__icon {
   width: 20px;
   height: 20px;
   margin-right: 5px;
 }
-
 .aside-item .aside-item__title {
   font-size: 24px;
   margin-bottom: 30px;
   color: white;
 }
-
 .aside-item .list__item {
   margin-bottom: 5px;
   list-style: none;
   color: white;
 }
-
 .aside-item .list__item .list__subtitle {
   font-style: normal;
   font-weight: 400;
@@ -436,7 +411,6 @@ textarea {
   line-height: 14px;
   color: white;
 }
-
 .aside-item .list__item .list__description {
   margin: 7px 0px 15px 7px;
   font-style: italic;
@@ -454,9 +428,9 @@ textarea {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 13,62px;
+  line-height: 13, 62px;
   text-decoration: none;
-  color: #56ccf2;
+  color: rgb(86, 204, 242);
 }
 
 * {
@@ -494,30 +468,25 @@ body {
   padding: 35px;
   border-top-right-radius: 30px;
 }
-
 .main .header {
   margin-top: 20px;
   margin-bottom: 40px;
 }
-
 .main .header > h1 {
   font-size: 42px;
   font-weight: 600;
   color: black;
   margin-bottom: 8px;
 }
-
 .main .header h2 {
   font-size: 20px;
   font-weight: 500;
   color: black;
 }
-
 .main .section {
   margin-bottom: 30px;
   width: 100%;
 }
-
 .main .section .section__text,
 .main .section .section__item {
   margin-left: 18px;
@@ -528,11 +497,9 @@ body {
   line-height: 16px;
   color: #4f4f4f;
 }
-
 .main .section .section__item {
   list-style-type: disc;
 }
-
 .main .section .section__title {
   font-style: normal;
   font-weight: bold;
@@ -543,49 +510,39 @@ body {
   padding-bottom: 15px;
   margin-bottom: 15px;
 }
-
 .main .projects__list {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   gap: 8px;
 }
-
 .main .projects__list .project__item {
   background: yellowgreen;
   width: 200px;
   height: 100px;
   cursor: pointer;
 }
-
 .main .projects__list .project__item:hover {
   box-shadow: inset 0 0 10px 5px rgba(0, 0, 0, 0.3);
 }
-
 .main .projects__list .project__item--transactions-table {
   background: url(../../img/projects-backgrounds/transactions-table.png) 0 0/100% 100% no-repeat;
 }
-
 .main .projects__list .project__item--museum {
   background: url(../../img/projects-backgrounds/museum.png) 0 0/100% 100% no-repeat;
 }
-
 .main .projects__list .project__item--leverx {
   background: url(../../img/projects-backgrounds/leverx.png) 0 0/100% 100% no-repeat;
 }
-
 .main .projects__list .project__item--konstruct {
   background: url(../../img/projects-backgrounds/konstruct.png) 0 0/100% 100% no-repeat;
 }
-
 .main .projects__list .project__item--counries-table {
   background: url(../../img/projects-backgrounds/counries-table.png) 0 0/100% 100% no-repeat;
 }
-
 .main .projects__list .project__item--calculator {
   background: url(../../img/projects-backgrounds/calculator.png) 0 0/100% 100% no-repeat;
 }
-
 .main .projects__list .project__item .project__link {
   display: block;
   width: 100%;
@@ -597,7 +554,8 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  column-gap: 15px;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
   width: 100%;
 }
 
@@ -661,27 +619,23 @@ body {
   border-bottom-right-radius: 30px;
   border-bottom-left-radius: 30px;
 }
-
 .footer .github-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 170px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
-
 .footer .github-container .github-picture {
   width: 32px;
   height: 32px;
   background: url(../../img/GitHub-Mark-Light-32px.png) no-repeat center;
   background-size: cover;
 }
-
 .footer .github-container .github-link {
   color: white;
   text-decoration: none;
 }
-
 .footer .rs-school-logo-container {
   display: flex;
   justify-content: space-between;
@@ -689,19 +643,17 @@ body {
   width: 155px;
   height: 30px;
 }
-
 .footer .rs-school-logo-container .rs-school-logo {
   height: 30px;
 }
-
 .footer .rs-school-logo-container p {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: white;
 }
 
 @media screen and (max-width: 900px) {
   .hljs {
-    width: calc(100vw * 0.92);
+    width: 92vw;
   }
   .container {
     flex-direction: column;
@@ -732,7 +684,6 @@ body {
     border-radius: 0%;
   }
 }
-
 @media screen and (max-width: 500px) {
   .aside-item {
     margin-left: 15px;
@@ -748,10 +699,8 @@ body {
     justify-content: space-around;
   }
 }
-
 @media screen and (max-width: 670px) {
   .projects__list {
     justify-content: center;
   }
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
