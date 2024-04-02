@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.main {
+    display: flex;
+    width: 70%;
+    border-radius: 30px;
+    box-shadow: 5px 5px 27px 6px rgba(0, 0, 0, 0.3);
+    margin: 50px auto;
+}
+
+.left {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    width: 308px;
+    padding: 40px 20px;
+    background-color: #555656;
+    position: relative;
+    color: #fff;
+}
+
+.general-info {
+    border-bottom: 2px dotted #fff;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.info-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+}
+
+.right {
+    flex: 2 1 auto;
+    padding: 40px 20px;
+}
+
+.avatar-wrapper {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #fff;
+    margin: 0 auto;
+}
+
+.avatar {
+    width: 100%;
+    object-fit: cover;
+}
+
+.info-text {
+    padding-left: 32px;
+    position: relative;
+}
+
+.info-text--linkedin::before {
+    content: '';
+    position: absolute;
+    left: 2px;
+    top: 0;
+    width: 24px;
+    height: 24px;
+    background: url('./assets/icons/linkedin.svg') no-repeat;
+    background-size: contain;
+}
+
+.info-text--email::before {
+    content: '';
+    position: absolute;
+    left: 2px;
+    top: 0;
+    width: 24px;
+    height: 24px;
+    background: url('./assets/icons/mail_icon.svg') no-repeat;
+    background-size: contain;
+}
+
+.info-text--tel::before {
+    content: '';
+    position: absolute;
+    left: 2px;
+    top: 0;
+    width: 24px;
+    height: 24px;
+    background: url('./assets/icons/phone_icon.svg') no-repeat;
+    background-size: contain;
+}
+
+.info-text--location::before {
+    content: '';
+    position: absolute;
+    left: 2px;
+    top: 0;
+    width: 24px;
+    height: 24px;
+    background: url('./assets/icons/location_icon.svg') no-repeat;
+    background-size: contain;
+}
+
+.skills {
+    padding: 20px 0;
+    border-bottom: 2px dotted #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.general-info-title {
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.skills-wrapper {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skills-item {
+    width: calc(50% - 4px);
+}
+
+.languages {
+    padding: 20px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.languages-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.languages-item {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #ffffff74;
+}
+
+.languages-item:last-child {
+    border-bottom: none;
+}
+
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    color: #292929;
+    gap: 40px;
+    padding-bottom: 28px;
+}
+
+.name-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.summary-name {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 48px;
+    text-transform: uppercase;
+}
+
+.summary-position {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.content-title {
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    padding-bottom: 4px;
+    font-weight: 500;
+    border-bottom: 1px solid #292929;
+    margin-bottom: 20px;
+}
+.experience {
+    padding-bottom: 24px;
+}
+
+.experience-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-title-wrapper {
+    display: flex;
+    background-color: #555656;
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.experience-title {
+    flex: 1 1 33%;
+    text-transform: uppercase;
+}
+
+.experience-item {
+    padding: 8px;
+    display: flex;
+    border-bottom: 1px solid #8f8f8f;
+}
+
+.experience-item:last-child {
+    border-bottom: none;
+}
+
+.experience-value {
+    flex: 1 1 33%;
+}
+
+.projects {
+    padding-bottom: 24px;
+}
+
+.projects-wrapper {
+    display: flex;
+    gap: 16px;
+}
+
+.projects-item {
+    flex: 1;
+}
+
+.project-name {
+    background-color: #555656;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+.project-period {
+    padding: 8px 16px;
+}
+
+.project-list {
+    padding-left: 28px;
+    list-style:circle;
+}
+
+.education-info--place {
+    font-weight: 600;
+}
